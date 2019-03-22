@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<!-- <div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div> -->
+<!-- <nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-text">
+      UniPantry
+    </span>
+    <a routerLink ="/signup" routerLinkActive = "active" title = "Sign Up">Sign up</a>
+    <button class="btn btn-primary">Sign Up</button>
+</nav> -->
+<section style = "background: white">
+    <div class = "container">
+      <div class = "board">
+        <app-navbar></app-navbar>
+
+        <div class="tab-content">
+            <router-outlet></router-outlet>
+        </div>
+      </div>
+      <pre>{{formData | json}}</pre>
+    </div>
+
+</section>
+
+
+
+
+<!-- <app-login></app-login>
+<app-signup></app-signup>
+<app-shipping></app-shipping>
+<app-payment></app-payment>
+<app-confirm></app-confirm>
+<router-outlet></router-outlet>
+ -->

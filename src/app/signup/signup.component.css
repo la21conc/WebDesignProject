@@ -1,0 +1,14 @@
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+#inputZip {
+    width: 20%;
+}
+.text-success {
+    color: #28a745;
+}
+.text-danger {
+    color: #dc3545;
+}

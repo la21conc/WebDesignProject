@@ -1,0 +1,50 @@
+<div class = "board-inner" id ="status-buttons" class = "test">
+  <ul class = "nav nav-tabs" id ="myTab" >
+    <div class = "liner" ></div>
+
+     <!--Circular signup icon-->
+      <li>
+        <a routerLink ="/signup" routerLinkActive = "active" [routerLinkActiveOptions] = "{ exact: true}" data-toggle = "tab" title = "signup">
+          <span class = "round-tabs one">
+              <!--Insert tab image here -->
+              <i class = "glyphicon glyphicon-user"></i>
+          </span>
+        </a>
+      </li>
+
+      
+     <!--Circular shipping icon-->
+      <li>
+          <a routerLink ="/shipping" routerLinkActive = "active"  data-toggle = "tab" title = "shipping">
+            <span class = "round-tabs two">
+                <!--Insert tab image here -->
+                <i class = "glyphicon glyphicon-tasks"></i>
+            </span>
+          </a>
+      </li>
+
+      <!--Circular Payment icon-->
+      <li>
+          <a routerLink ="/payment" routerLinkActive = "active"  data-toggle = "tab" title = "payment">
+            <span class = "round-tabs three">
+                <!--Insert tab image here -->
+                <i class = "glyphicon glyphicon-home"></i>
+            </span>
+          </a>
+      </li>
+
+      <!--Circular confirm icon-->
+      <li>
+          <a routerLink ="/confirm" routerLinkActive = "active"  data-toggle = "tab" title = "confirm">
+            <span class = "round-tabs four">
+                <!--Insert tab image here -->
+                <i class = "glyphicon glyphicon-ok"></i>
+            </span>
+          </a>
+      </li>
+
+    
+  </ul> 
+  <div class = "clearfix"></div>
+</div>
+<script src="content/js/loading-bars.js"></script>

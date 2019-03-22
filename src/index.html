@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LogIn</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script type="text/javascript">
+    function getValue(x) {
+        
+        if(x.value == 'No'){
+    document.getElementById("newAddress").style.display = 'none'; // you need a identifier for changes
+  }
+  else{
+    document.getElementById("newAddress").style.display = 'block'; // you need a identifier for changes
+  }
+      }
+  
+      var check = function() {
+      if (document.getElementById('password').value ==
+          document.getElementById('confirmPassword').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'Matching';
+      } else {
+      		document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'Passwords do not match.';
+      }
+  }
+     
+  var ccValidate = function() {
+    var re16digit = /^\d{16}$/
+    if (!re16digit.test(document.myform.cardNumber.value)) {
+       document.getElementByID('ccAlert').innerHTML = 'Please enter your 16 digit credit card numbers';
+        return false;
+    }
+}
+
+  </script>
+ 
+
+
+</head>
+<body>
+  <app-root></app-root>
+ 
+</body>
+</html>
